@@ -1,5 +1,6 @@
 # deamons
 dunst & # notification deamon
+clipmenud & # clipboard deamon
 
 #autorandr for hdmi port
 autorandr &
