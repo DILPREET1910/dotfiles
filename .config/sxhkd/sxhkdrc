@@ -1,0 +1,69 @@
+# volume controls
+XF86AudioLowerVolume 
+	amixer --quiet set Master 5%-
+XF86AudioRaiseVolume 
+	amixer --quiet set Master 5%+
+XF86AudioMute 
+	amixer --quiet set Master toggle
+XF86AudioPlay 
+	playerctl play-pause
+XF86AudioPause
+	playerctl play-pause
+alt + o
+	playerctl play-pause
+XF86AudioNext
+	playerctl next
+XF86AudioPrev
+	playerctl previous
+
+# microphone controls
+XF86Launch5
+	amixer --quiet set Capture toggle
+
+# slock
+super + l
+	slock
+
+# clip menu
+super +v 
+	clipmenu
+
+# screenshot
+Print
+  gnome-screenshot --interactive
+ctrl + Print
+  flameshot gui
+
+# brave
+super + w
+  brave
+super + W
+  brave --incognito
+
+# mailspring
+alt + G
+  mailspring --password-store="gnome-libsecret"
+
+# map page up, down, home of numpad to zoom in, out and reset in st
+ctrl + shift + KP_Prior
+  xdotool keyup KP_Prior && xdotool key Prior
+ctrl + shift + KP_Next
+  xdotool keyup KP_Next && xdotool key Next
+ctrl + shift + KP_Home
+  xdotool keyup KP_Home && xdotool key Home
+
+# open nautilus
+super + e
+  nautilus
+
+# dmenu bookmark
+super + i
+  ~/Documents/MyPrograms/Scripts/dmenu-bookmark/bookmark
+super + b
+  ~/Documents/MyPrograms/Scripts/dmenu-bookmark/add-bookmark
+super + B
+  sleep 0.1 && xdotool keyup shift && sleep 0.1 && xdotool key alt+shift+return && sleep 0.1 && xdotool type "nvim ~/Documents/MyPrograms/Scripts/dmenu-bookmark/.cache/bookmarks" && sleep 0.1 && xdotool key return
+
+# kill dwm instance
+alt + Q
+  pkill dwm

@@ -1,0 +1,20 @@
+# undo tree log
+/.config/nvim/.undodir/ 
+
+# ignore everthing
+/*
+
+# except these
+!.gitignore
+!.xinitrc
+
+!/.config
+/.config/*
+
+!/.config/autorandr
+!/.config/nvim
+!/.config/suckless
+!/.config/sxhkd
+!/.config/tmux
+!/.config/zsh
+!/.config/bash
