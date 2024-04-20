@@ -18,7 +18,7 @@ XF86AudioPrev
 
 # microphone controls
 XF86Launch5
-	amixer --quiet set Capture toggle
+  pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # slock
 super + l
