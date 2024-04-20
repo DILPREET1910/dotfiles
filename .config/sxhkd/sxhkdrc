@@ -1,10 +1,10 @@
 # volume controls
 XF86AudioLowerVolume 
-	amixer --quiet set Master 5%-
+  pactl set-sink-volume @DEFAULT_SINK@ -5%
 XF86AudioRaiseVolume 
-	amixer --quiet set Master 5%+
+  pactl set-sink-volume @DEFAULT_SINK@ +5%
 XF86AudioMute 
-	amixer --quiet set Master toggle
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
 XF86AudioPlay 
 	playerctl play-pause
 XF86AudioPause
