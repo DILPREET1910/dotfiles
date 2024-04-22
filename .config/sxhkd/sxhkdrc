@@ -53,8 +53,15 @@ ctrl + shift + KP_Home
   xdotool keyup KP_Home && xdotool key Home
 
 # open nautilus
+# home folder
 super + e
   nautilus
+# downloads folder
+alt + J
+  nautilus ~/Downloads
+# Documents folder
+alt + D
+  nautilus ~/Documents
 
 # dmenu bookmark
 super + i
