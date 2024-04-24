@@ -57,10 +57,10 @@ ctrl + shift + KP_Home
 super + e
   nautilus
 # downloads folder
-alt + J
+alt + ctrl + j
   nautilus ~/Downloads
 # Documents folder
-alt + D
+alt + ctrl + d
   nautilus ~/Documents
 
 # dmenu bookmark
