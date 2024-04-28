@@ -158,5 +158,3 @@ if [ -f '/home/dilpreet/Documents/MyPrograms/github/google-cloud-cli/google-clou
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/dilpreet/Documents/MyPrograms/github/google-cloud-cli/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/dilpreet/Documents/MyPrograms/github/google-cloud-cli/google-cloud-sdk/completion.zsh.inc'; fi
-
-eval $(thefuck --alias)
