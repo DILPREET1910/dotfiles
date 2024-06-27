@@ -117,6 +117,7 @@ alias svim='sudo -E nvim' # open nvim in sudo mode with all nvim configs
 
 # alias to source environment variables:
 alias source-conda='source ~/anaconda3/bin/activate'
+alias source-python='source ~/Documents/MyPrograms/python/python_virtual_environment_3.12/bin/activate'
 
 #######################################################
 # EXPORT'S
