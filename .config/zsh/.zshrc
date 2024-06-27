@@ -114,6 +114,7 @@ alias get='aria2c -x 6 -s 6'
 alias python='python3.11'
 alias history='history -E 0' # print whole(0) history with time stamps(-E)
 alias svim='sudo -E nvim' # open nvim in sudo mode with all nvim configs
+alias cd='z'
 
 # alias to source environment variables:
 alias source-conda='source ~/anaconda3/bin/activate'
