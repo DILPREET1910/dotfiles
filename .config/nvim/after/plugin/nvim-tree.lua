@@ -4,7 +4,7 @@ vim.g.loaded_netrwPlugin=1
 require('nvim-tree').setup({
   actions = {
     open_file = {
-      quit_on_open = true, -- quite after opening file
+      quit_on_open = false, -- quite after opening file
     }
   },
   git = {
