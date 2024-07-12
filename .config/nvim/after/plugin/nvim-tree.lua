@@ -1,5 +1,5 @@
-vim.g.loaded_netq=1
-vim.g.loaded_netrwPlugin=1
+vim.g.loaded_netq = 1
+vim.g.loaded_netrwPlugin = 1
 
 require('nvim-tree').setup({
   actions = {
@@ -8,8 +8,11 @@ require('nvim-tree').setup({
     }
   },
   git = {
-    ignore = false;
-  }
+    ignore = false,
+  },
+  update_focused_file = {
+    enable = true,
+  },
 })
 
-vim.keymap.set('n','<C-n>',':NvimTreeFindFileToggle<CR>')
+vim.keymap.set('n', '<C-n>', ':NvimTreeFindFileToggle<CR>')
