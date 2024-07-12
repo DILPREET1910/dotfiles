@@ -73,4 +73,4 @@ super + B
 
 # kill dwm instance
 alt + Q
-  pkill dwm
+  killall -p dwm
