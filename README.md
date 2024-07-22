@@ -1,5 +1,8 @@
 # My Dotfiles
+- Catpuccin Themed
+- X display protocol based dyanamic window manager ([dwm](https://dwm.suckless.org/))
+- Neovim - managed by packer and Mson for lsps
+- Tmux on [st](https://st.suckless.org/)
+- Zsh shell with starship command prompt
 
 ![st](assets/st.png)
-
-The above image contains neovim, zsh shell with startship command prompt. The tiling is done through Tmux and its running on [suckless's](https://suckless.org/) st(simple terminal).
