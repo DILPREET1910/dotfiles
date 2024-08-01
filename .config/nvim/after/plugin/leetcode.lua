@@ -13,7 +13,7 @@ require("leetcode").setup({
 
 	---@type lc.storage
 	storage = {
-		home = "/home/dilpreet/Documents/MyPrograms/java/codechef",
+		home = vim.fn.getcwd(),
 		cache = vim.fn.stdpath("cache") .. "/leetcode",
 	},
 
