@@ -1,6 +1,7 @@
 # deamons
 dunst & # notification deamon
 clipmenud & # clipboard deamon
+kdeconnectd & # kdeconnect deamon
 
 #autorandr for hdmi port
 autorandr &
