@@ -71,7 +71,7 @@ static const struct arg args[] = {
 	{disk_used,"   [ DISK:%s/","/home"},
 	{disk_total,"%s ]","/home"},
 	{run_command,"   [ VOL:%s ]","pactl get-sink-volume @DEFAULT_SINK@ | awk '{ print $5 }'"},
-	{run_command,"   [ MIC:%s ]","pactl get-source-mute @DEFAULT_SOURCE@ | awk '{ print $2 }'"},
+	{run_command,"   [ MUTE:%s ]","pactl get-source-mute @DEFAULT_SOURCE@ | awk '{ print $2 }'"},
 	{battery_perc,"   [ BAT:%s%% ","BAT0"},
 	{battery_state,"%s ]","BAT0"},
 	{ datetime, "   [ %s ]",           "%a, %d %b %r" },
