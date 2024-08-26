@@ -27,9 +27,9 @@ return require("packer").startup(function(use)
 
   -- lsp
   use({
-    "williamboman/mason.nvim",         -- lsp package manager
+    "williamboman/mason.nvim",           -- lsp package manager
     "williamboman/mason-lspconfig.nvim", -- bridges mason and nvim lspconfig
-    "neovim/nvim-lspconfig",           -- lsp configuration
+    "neovim/nvim-lspconfig",             -- lsp configuration
   })
 
   -- file tree
@@ -155,5 +155,10 @@ return require("packer").startup(function(use)
   -- undo tree
   use({
     "mbbill/undotree",
+  })
+
+  -- vim rest console
+  use({
+    "diepm/vim-rest-console"
   })
 end)
