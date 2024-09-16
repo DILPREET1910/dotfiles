@@ -68,6 +68,7 @@ return require("packer").startup(function(use)
   use({
     "tpope/vim-fugitive",
     "lewis6991/gitsigns.nvim",
+    "sindrets/diffview.nvim",
   })
 
   -- wakatime
