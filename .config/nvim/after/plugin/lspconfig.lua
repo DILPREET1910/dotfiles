@@ -7,14 +7,14 @@ require("mason-lspconfig").setup({
 -- Define Functions and Variables here
 --#########################################
 local on_attach = function(_, _)
-  vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})                    -- rename variables in current buffer
-  vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})               -- code action
-  vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})                        -- get references in current buffer
-  vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, {})   -- get references using telescope in current buffer
-  vim.keymap.set("n", "K", vim.lsp.buf.hover, {})                              -- documentation
+  vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})                     -- rename variables in current buffer
+  vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})                -- code action
+  vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})                         -- get references in current buffer
+  vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, {})    -- get references using telescope in current buffer
+  vim.keymap.set("n", "K", vim.lsp.buf.hover, {})                               -- documentation
   vim.keymap.set("n", "<leader>de", ":lua vim.diagnostic.open_float()<CR>", {}) -- show diagnostics error
-  vim.keymap.set("n", "<leader>dn", ":lua vim.diagnostic.goto_next()<CR>", {}) -- jump to next diagnostic error
-  vim.keymap.set("n", "<leader>dp", ":lua vim.diagnostic.goto_prev()<CR>", {}) -- jump to previous diagnostic error
+  vim.keymap.set("n", "<leader>dn", ":lua vim.diagnostic.goto_next()<CR>", {})  -- jump to next diagnostic error
+  vim.keymap.set("n", "<leader>dp", ":lua vim.diagnostic.goto_prev()<CR>", {})  -- jump to previous diagnostic error
 end
 
 local capabilites = require("cmp_nvim_lsp").default_capabilities()
@@ -90,6 +90,10 @@ require("lspconfig").pyright.setup({
 
 -- go
 require("lspconfig").gopls.setup({
+  on_attach = on_attach,
+  capabilities = capabilites,
+})
+require("lspconfig").golangci_lint_ls.setup({
   on_attach = on_attach,
   capabilities = capabilites,
 })
