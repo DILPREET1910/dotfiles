@@ -169,3 +169,6 @@ if [ -f '/etc/google-cloud-sdk/completion.zsh.inc' ]; then . '/etc/google-cloud-
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# go
+export PATH="$PATH:/home/dilpreet/go/bin"
