@@ -71,7 +71,7 @@ require("lspconfig").eslint.setup({
   on_attach = on_attach,
   capabilities = capabilites,
 })
-require("lspconfig").tsserver.setup({
+require("lspconfig").ts_ls.setup({
   on_attach = on_attach,
   capabilities = capabilites,
 })
@@ -94,12 +94,6 @@ require("lspconfig").gopls.setup({
   capabilities = capabilites,
 })
 require("lspconfig").golangci_lint_ls.setup({
-  on_attach = on_attach,
-  capabilities = capabilites,
-})
-
--- xml
-require("lspconfig").lemmnix.setup({
   on_attach = on_attach,
   capabilities = capabilites,
 })
