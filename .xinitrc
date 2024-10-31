@@ -16,6 +16,9 @@ slstatus &
 # flameshot
 flameshot &
 
+# rclone
+rclone mount onedrive:/ ~/onedrive &
+
 while true; do
     dwm 2> ~/.dwm.log
 done
