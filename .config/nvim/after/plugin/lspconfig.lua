@@ -52,6 +52,8 @@ require("lspconfig").jsonls.setup({
 require("lspconfig").jdtls.setup({
   on_attach = on_attach,
   capabilities = capabilites,
+  cmd = { vim.fn.expand '~/.local/share/nvim/mason/bin/jdtls' },
+  root_dir = vim.fn.getcwd(),
 })
 
 -- html
