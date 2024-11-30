@@ -7,6 +7,9 @@ kdeconnectd & # kdeconnect deamon
 autorandr &
 autorandr --change
 
+# redshift
+redshift &
+
 # sxhkd hotkeys manager
 sxhkd &
 
