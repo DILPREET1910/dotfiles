@@ -99,3 +99,9 @@ require("lspconfig").golangci_lint_ls.setup({
   on_attach = on_attach,
   capabilities = capabilites,
 })
+
+-- c, cpp
+require("lspconfig").clangd.setup({
+  on_attach = on_attach,
+  capabilities = capabilites,
+})
