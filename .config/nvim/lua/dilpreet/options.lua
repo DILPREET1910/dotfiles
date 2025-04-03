@@ -35,3 +35,10 @@ vim.opt.formatoptions:remove({ "r", "o" })
 -- persistent undo
 vim.opt.undodir = "/home/dilpreet/.config/nvim/.undodir"
 vim.opt.undofile = true
+
+-- code folding
+vim.opt.foldmethod = "indent"
+vim.opt.foldcolumn = "0"
+vim.opt.foldtext = ""
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
