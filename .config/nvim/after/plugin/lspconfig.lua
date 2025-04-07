@@ -39,7 +39,7 @@ require("lspconfig").lua_ls.setup({
 require("lspconfig").dartls.setup({
   on_attach = on_attach,
   capabilities = capabilites,
-  cmd = { "/var/lib/snapd/snap/bin/dart", "language-server", "--protocol=lsp" },
+  cmd = { "/home/dilpreet/Documents/MyPrograms/flutter/flutter/bin/dart", "language-server", "--protocol=lsp" },
 })
 
 -- json lsp (jsonls)
