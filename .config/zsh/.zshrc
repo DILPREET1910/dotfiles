@@ -172,3 +172,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # go
 export PATH="$PATH:/home/dilpreet/go/bin"
+export PATH="$PATH:/home/dilpreet/Documents/MyPrograms/flutter/flutter/bin"
