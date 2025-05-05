@@ -119,6 +119,10 @@ alias cd='z'
 alias source-conda='source ~/anaconda3/bin/activate'
 alias source-python='source ~/Documents/MyPrograms/python/python_virtual_environment_3.12/bin/activate'
 
+# wireguard
+alias wghetzner='sudo wg-quick up /etc/wireguard/peer.conf'
+alias wghetznerdown='sudo wg-quick down /etc/wireguard/peer.conf'
+
 #######################################################
 # EXPORT'S
 #######################################################
