@@ -42,7 +42,7 @@ super + W
 
 # mailspring
 alt + G
-  mailspring --password-store="gnome-libsecret"
+  mailspring --password-store="gnome-libsecret" --disable-gpu
 
 # map page up, down, home of numpad to zoom in, out and reset in st
 ctrl + shift + KP_Prior
