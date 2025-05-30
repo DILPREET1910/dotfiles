@@ -123,6 +123,14 @@ alias source-python='source ~/Documents/MyPrograms/python/python_virtual_environ
 alias wghetzner='sudo wg-quick up /etc/wireguard/peer.conf'
 alias wghetznerdown='sudo wg-quick down /etc/wireguard/peer.conf'
 
+
+#######################################################
+# functions 'S
+#######################################################
+cppath() {
+  echo "$(pwd)/$1" | xclip -selection clipboard
+}
+
 #######################################################
 # EXPORT'S
 #######################################################
