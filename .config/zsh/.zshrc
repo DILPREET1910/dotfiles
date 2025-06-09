@@ -131,6 +131,12 @@ cppath() {
   echo "$(pwd)/$1" | xclip -selection clipboard
 }
 
+# mailspring
+mailspring() {
+  cd /home/dilpreet/Documents/MyPrograms/github/Mailspring/
+  npm start -- --password-store="gnome-libsecret" --disable-gpu
+}
+
 #######################################################
 # EXPORT'S
 #######################################################

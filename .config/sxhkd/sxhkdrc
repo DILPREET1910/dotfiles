@@ -41,8 +41,8 @@ super + W
   brave --incognito
 
 # mailspring
-alt + G
-  mailspring --password-store="gnome-libsecret" --disable-gpu
+#alt + G
+#  mailspring --password-store="gnome-libsecret" --disable-gpu
 
 # map page up, down, home of numpad to zoom in, out and reset in st
 ctrl + shift + KP_Prior
@@ -74,3 +74,7 @@ super + B
 # kill dwm instance
 alt + Q
   killall -p dwm
+
+# d key not working
+XF86Launch2
+  xdotool key d
